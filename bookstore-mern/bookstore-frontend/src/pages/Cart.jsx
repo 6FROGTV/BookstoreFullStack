@@ -17,7 +17,8 @@ const Cart = () => {
       text: "Bạn có chắc chắn muốn bỏ cuốn sách này không?",
       icon: "warning",
       showCancelButton: true,
-
+      confirmButtonColor: "#ef4444",
+      cancelButtonColor: "#64748b",
       confirmButtonText: "Đúng, xóa nó!",
       cancelButtonText: "Hủy",
       customClass: { popup: "rounded-4" },
