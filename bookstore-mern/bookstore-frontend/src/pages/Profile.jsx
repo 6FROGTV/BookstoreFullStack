@@ -8,6 +8,11 @@ import imageCompression from "browser-image-compression";
 const Profile = () => {
   const { user, login } = useAuth();
 
+  const [name, setName] = useState(user?.name || "");
+  const [password, setPassword] = useState("");
+  const [avatar, setAvatar] = useState(user?.avatar || "");
+  const [isUploading, setIsUploading] = useState(false);
+
   const [message, setMessage] = useState({ type: "", text: "" });
 
   if (!user)
